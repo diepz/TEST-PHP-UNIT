@@ -27,4 +27,11 @@ class UserController extends Controller
 
     }
 
+    public function abb($a) {
+        if ($a < 0) {
+            return -$a;
+        }
+        return $a;
+    }
+
 }

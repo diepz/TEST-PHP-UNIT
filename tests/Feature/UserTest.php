@@ -41,5 +41,14 @@ class UserTest extends TestCase
 
     }
 
+    public function testFindAbsolute() {
+        $absolute = new UserController();
+        $this->assertEquals(0, $absolute->abb(0));
+        $this->assertEquals(1, $absolute->abb(1));
+        $this->assertEquals(1, $absolute->abb(-1));
+    }
+
+
+
 
 }
